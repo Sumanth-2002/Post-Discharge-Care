@@ -1,0 +1,38 @@
+<!-- popup_layout.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30sp"
+    android:elevation="30dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:cardCornerRadius="10dp">
+
+    <!-- Add your popup content here, for example, a TextView and a Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Go to Hospital Immediately"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#ff512f"
+            android:text="Close"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

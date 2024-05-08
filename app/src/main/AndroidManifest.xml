@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ig"
+        android:label="Post Discharge Care"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/ig"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Androidd"
+        tools:targetApi="31">
+        <activity
+            android:name=".PopupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Base"
+            android:exported="false"
+            android:label="@string/title_activity_base"
+            android:theme="@style/Theme.Androidd" />
+        <activity
+            android:name=".sampleTest"
+            android:exported="false" />
+        <activity
+            android:name=".view_images"
+            android:exported="true" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".doc_profileUpdate"
+            android:exported="true" />
+        <activity
+            android:name=".doctor_profile"
+            android:exported="true" />
+        <activity
+            android:name=".doc_questionnaireResponse"
+            android:exported="true" />
+        <activity
+            android:name=".patient_profile"
+            android:exported="true" />
+        <activity
+            android:name=".view_report"
+            android:exported="true" />
+        <activity
+            android:name=".view_discharge"
+            android:exported="true" />
+        <activity
+            android:name=".viewTablets"
+            android:exported="false" />
+        <activity
+            android:name=".pt_tablets"
+            android:exported="true" />
+        <activity
+            android:name=".patient_med"
+            android:exported="true" />
+        <activity
+            android:name=".view_patient"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_questionnaire"
+            android:exported="false" />
+        <activity
+            android:name=".doc_discharge"
+            android:exported="false"
+            android:label="@string/title_activity_doc_medicine"
+            android:theme="@style/Theme.Androidd" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".addpatient2"
+            android:exported="true" />
+        <activity
+            android:name=".add_patient"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_login"
+            android:exported="false" />
+        <activity
+            android:name=".doc_reportTime"
+            android:exported="true" />
+        <activity
+            android:name=".doc_medicine"
+            android:exported="false" />
+        <activity
+            android:name=".search_pid"
+            android:exported="false" />
+        <activity
+            android:name=".pdis"
+            android:exported="false" />
+        <activity
+            android:name=".datepicker"
+            android:exported="false" />
+        <activity
+            android:name=".followup"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_home"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".patient_home"
+            android:exported="true" />
+        <activity
+            android:name=".patient_login"
+            android:exported="false" />
+        <activity
+            android:name=".types_of_login"
+            android:exported="false" />
+    </application>
+
+</manifest>

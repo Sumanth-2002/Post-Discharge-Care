@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".doctor_questionnaire">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5563A">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Follow Up Questionnaire"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/general">
+
+        <!-- General Symptoms Section -->
+
+
+        <TextView
+            android:id="@+id/general_symptoms_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:text="General Symptoms"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ges1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Not Drinking"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ges2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Vomits Everything"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ges3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Convulsions"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ges4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Lethargy"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ges5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Unconsciousness"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/danger"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/danger_symptoms_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Danger Symptoms"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/des1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Fast Breathing"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/des2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Fatigue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/des3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Fever with rash"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/des4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Ear with discharge/pain"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/des5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Irritable"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/des6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Abnormal Body movements"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="250sp"
+        android:layout_height="50sp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10sp"
+        android:backgroundTint="#ff512f"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:cornerRadius="20sp" />
+
+</LinearLayout>

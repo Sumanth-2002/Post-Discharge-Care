@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".add_patient"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5563A">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Add Patient"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Pid"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="pid"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Name"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Contact no"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/Contact_No"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Contact no"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Gender"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <Spinner
+                    android:id="@+id/Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:entries="@array/Gender"
+                    android:hint="Gender"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Date of Birth"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:clickable="true"
+                    android:drawableRight="@drawable/calendar"
+                    android:focusable="false"
+                    android:onClick="selectDate"
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Date_of_Birth"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Height"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/Height"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Height"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Weight"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/Weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Weight"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Parent Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/Parent_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Parent Name"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Admitted on"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/Admitted_On"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/calendar"
+                    android:focusable="false"
+                    android:onClick="selectDate"
+                    android:layout_marginStart="10sp"
+                    android:hint="Admit date"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Discharge on"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:clickable="true"
+                    android:drawableRight="@drawable/calendar"
+                    android:focusable="false"
+                    android:onClick="selectDate"
+                    android:id="@+id/Discharge_On"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Discharge date"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Profile_Pic"
+                android:layout_marginTop="10sp"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:src="@drawable/cam"
+                android:scaleType="centerCrop" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addpa"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30sp"
+        android:layout_gravity="center"
+        app:cornerRadius="10sp"
+        android:backgroundTint="#ff512f"
+        android:text="Next" />
+</LinearLayout>

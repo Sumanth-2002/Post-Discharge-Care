@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+        <TableRow
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GROSS MOTOR"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:background="@drawable/bg"
+                android:textSize="23dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:hint="Type here"
+                android:textSize="23dp"
+                android:padding="5dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FINE MOTOR"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:background="@drawable/bg"
+                android:textSize="23dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:hint="Type here"
+                android:textSize="23dp"
+                android:padding="5dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LANGUAGE"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:background="@drawable/bg"
+                android:textSize="23dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:hint="Type here"
+                android:textSize="23dp"
+                android:padding="5dp"/>
+        </TableRow>
+        <TableRow
+
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOCIAL AND CONGNITIONT"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:background="@drawable/bg"
+                android:textSize="23dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:hint="Type here"
+                android:textSize="23dp"
+                android:padding="5dp"/>
+        </TableRow>
+    </TableLayout>
+    </HorizontalScrollView>
+</LinearLayout>

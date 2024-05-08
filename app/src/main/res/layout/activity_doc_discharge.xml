@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".doc_discharge">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ftoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff512f">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8sp"
+                android:text="Discharge Summary"
+                android:textColor="#ffffff"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Pid"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="pid"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Name"
+                    android:id="@+id/Name"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Gender"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Gender"
+                    android:id="@+id/Gender"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Department"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Department"
+                    android:id="@+id/Department"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Consultant"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Consultant"
+                    android:id="@+id/Consultant"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Address"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Address"
+                    android:id="@+id/Address"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Date of admission"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:clickable="true"
+                    android:drawableRight="@drawable/calendar"
+                    android:focusable="false"
+                    android:onClick="selectDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Date of Admission"
+                    android:id="@+id/Date_of_Admission"
+                    android:inputType="date" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Date of Discharge"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:clickable="true"
+                    android:drawableRight="@drawable/calendar"
+                    android:focusable="false"
+                    android:onClick="selectDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Date of Discharge"
+                    android:id="@+id/Date_of_Discharge"
+                    android:inputType="date" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Diagnosis"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text=":"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+
+                <EditText
+                    android:id="@+id/disease"
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:layout_marginStart="10sp"
+                    android:hint="Disease"
+                    android:inputType="textMultiLine" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Chief Complaints"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/chief_complaints"
+                    android:inputType="textMultiLine"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="History of Present Illness"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/History_of_present_illness"
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text="Past History"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/past_history"
+                    android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Antennal History"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:id="@+id/antennal_history"
+                    android:textSize="17sp"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text="Natal History"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/natal_history"
+                    android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text="Postnatal History"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/postnatal_history"
+                    android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:textAllCaps="true"
+                    android:text="Developmental History"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background">
+
+                        <TableRow
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:text="GROSS MOTOR"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="300sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:id="@+id/gross_motor"
+                                android:padding="5sp"
+                                android:inputType="textMultiLine"
+                                android:textSize="17sp" />
+                        </TableRow>
+
+                        <TableRow android:layout_marginLeft="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:text="FINE MOTOR"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="300sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:inputType="textMultiLine"
+                                android:padding="5sp"
+                                android:id="@+id/fine_motor"
+                                android:textSize="17sp" />
+                        </TableRow>
+
+                        <TableRow android:layout_marginLeft="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:gravity="center"
+                                android:text="LANGUAGE"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="300sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:inputType="textMultiLine"
+                                android:padding="5sp"
+                                android:id="@+id/language"
+                                android:textSize="17sp" />
+                        </TableRow>
+
+                        <TableRow
+
+                            android:layout_marginLeft="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:text="SOCIAL AND CONGNITIONT"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="300sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:inputType="textMultiLine"
+                                android:padding="5sp"
+                                android:id="@+id/social_and_congnitiont"
+                                android:textSize="17sp" />
+                        </TableRow>
+                    </TableLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Immunisation History"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/immunisation_history"
+                    android:inputType="textMultiLine"/>
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background">
+
+                        <TableRow
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:text="ANTHROPOMETRY"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:inputType="textMultiLine"
+                                android:padding="5sp"
+                                android:id="@+id/anthropometry"
+                                android:textSize="17sp" />
+                        </TableRow>
+
+                        <TableRow android:layout_marginLeft="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:text="WEIGHT"
+
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:id="@+id/weightt"
+                                android:inputType="textMultiLine"
+                                android:padding="5sp"
+                                android:textSize="17sp" />
+                        </TableRow>
+
+                        <TableRow android:layout_marginLeft="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:gravity="center"
+                                android:text="HEIGHT"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:inputType="textMultiLine"
+                                android:padding="5sp"
+                                android:id="@+id/heightt"
+                                android:textSize="17sp" />
+                        </TableRow>
+
+                    </TableLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="VITALS AT ADMISSION"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
+                        android:background="@drawable/background">
+
+                        <TableRow
+                            android:layout_marginTop="5sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:gravity="center"
+                                android:text="Heart Rate"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:id="@+id/heart_rate"
+                                android:padding="5sp"
+                                android:textSize="17sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:text="Temperature"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:padding="5sp"
+                                android:id="@+id/temperature"
+                                android:textSize="17sp" />
+                        </TableRow>
+
+                        <TableRow >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:text="CRT"
+                                android:textSize="17sp"
+                                android:gravity="center"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:id="@+id/crt"
+                                android:padding="5sp"
+                                android:textSize="17sp" />
+                        </TableRow>
+                        <TableRow >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:text="RR"
+                                android:textSize="17sp"
+                                android:gravity="center"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:id="@+id/rr"
+                                android:padding="5sp"
+                                android:textSize="17sp" />
+                        </TableRow>
+                        <TableRow >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:padding="5sp"
+                                android:text="Spo2"
+                                android:textSize="17sp"
+                                android:gravity="center"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg"
+                                android:hint="Type here"
+                                android:id="@+id/spo2"
+                                android:padding="5sp"
+                                android:textSize="17sp" />
+                        </TableRow>
+
+                    </TableLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Head to toe examination"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/head_to_toe_examination"
+                    android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="General examination"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/general_examination"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Systematic examination"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/systematic_examination"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Treatment given"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/treatment_given"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Course in Hospital"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/course_in_hospital"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Course in picu"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:id="@+id/course_in_picu"
+                    android:textSize="17sp"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Course in ward"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:id="@+id/course_in_ward"
+                    android:textSize="17sp"
+                    android:inputType="textMultiLine"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Advice on Discharge"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/advice_on_discharge"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8sp"
+                    android:text="Review"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:hint="Type here"
+                    android:textSize="17sp"
+                    android:id="@+id/review"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:text="Add Reports"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5sp"
+                    android:textSize="18sp"
+                    android:backgroundTint="#ff512f"
+                    app:cornerRadius="10sp"
+                    android:textStyle="bold"
+                    android:id="@+id/addimages"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/imageGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16sp">
+                </LinearLayout>
+            </HorizontalScrollView>
+            <Button
+                android:id="@+id/save"
+                android:layout_width="170sp"
+                android:layout_height="60sp"
+                android:text="Save"
+                android:backgroundTint="#ff512f"
+                android:textStyle="bold"
+                app:cornerRadius="10sp"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

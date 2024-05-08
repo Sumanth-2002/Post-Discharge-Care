@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="report_time_margin_start">10dp</dimen>
+    <dimen name="cardCornerRadius">8dp</dimen>
+    <dimen name="cardElevation">15dp</dimen>
+    <dimen name="cardTextSize">8sp</dimen>
+    <dimen name="text_size">8dp</dimen>
+    <dimen name="card_view_padding">15dp</dimen>
+    <dimen name="card_view_margin">5dp</dimen>
+</resources>

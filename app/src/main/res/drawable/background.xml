@@ -1,0 +1,16 @@
+<!-- res/drawable/bg_with_stroke.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background with rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Background color -->
+            <solid android:color="#577D95D4"/> <!-- Set your desired background color -->
+            <!-- Rounded corners -->
+            <corners android:radius="8dp"/> <!-- Set your desired corner radius -->
+        </shape>
+    </item>
+
+    <!-- Stroke -->
+
+</layer-list>

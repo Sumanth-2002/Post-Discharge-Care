@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile_name"
+            android:title="Name: John Doe" />
+        <item
+            android:id="@+id/nav_profile_contact_no"
+            android:title="Contact No: +1234567890" />
+        <item
+            android:id="@+id/nav_profile_pid"
+            android:title="PID: 12345" />
+        <item
+            android:id="@+id/nav_profile_gender"
+            android:title="Gender: Male" />
+        <item
+            android:id="@+id/nav_profile_parent_name"
+            android:title="Parent Name: Jane Doe" />
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:title="Edit Profile"
+            android:orderInCategory="300"
+            />
+        <!-- You can set an edit icon here -->
+    </group>
+</menu>

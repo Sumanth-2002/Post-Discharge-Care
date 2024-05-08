@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5563A">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicines "
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_gravity="center"
+        android:src="@drawable/medic"/>
+    <ListView
+        android:id="@+id/courseListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1sp"
+        android:padding="8sp"
+        android:background="#d9d9d9" />
+
+</LinearLayout>
